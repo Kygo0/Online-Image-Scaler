@@ -15,18 +15,23 @@
         Image Height:<br> <input id="userHeight" type="number" imgHeight ="">
         <br>
         <input accept="image/*" type='file' id='imgInp' /><br>
-        <img id="imageID" src="#" style="width: 100px; height:100px;" />
+        <img id="imageID" src="#" alt=""/>
         <br>
-        <button type="button" onclick="changeStyle()">Click Me</button>
+        <button type="button" onclick="changeStyle()">Change image resolution</button>
         <br>
-        <input type="submit" value="Save"/>
     </form>
     <script src="javascript.js"></script>
     <script>
         function changeStyle() {
             var element = document.getElementById("imageID");
-            var widthElement = document.getElementById("userWidth")
-            var heightElement = document.getElementById("userHeight")
+            var widthElement = document.getElementById("userWidth").value;
+            var heightElement = document.getElementById("userHeight").value;
+            if (widthElement > 650) {
+                widthElement = 650;
+            }
+            if (heightElement > 650) {
+                heightElement = 650;
+            }
             element.style.width = widthElement+"px";
             element.style.height = heightElement+"px";
         }
