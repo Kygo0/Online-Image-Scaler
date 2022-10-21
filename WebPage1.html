@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Online Image Editor</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Stylesheet1.css" rel="stylesheet" />
+
+</head>
+<body>
+    <form runat="server">
+        Image Width:<br> <input id="userWidth" type="number" imgWidth ="">
+        <br>
+        Image Height:<br> <input id="userHeight" type="number" imgHeight ="">
+        <br>
+        <input accept="image/*" type='file' id='imgInp' /><br>
+        <img id="imageID" src="#" style="width: 100px; height:100px;" />
+        <br>
+        <button type="button" onclick="changeStyle()">Click Me</button>
+        <br>
+        <input type="submit" value="Save"/>
+    </form>
+    <script src="javascript.js"></script>
+    <script>
+        function changeStyle() {
+            var element = document.getElementById("imageID");
+            var widthElement = document.getElementById("userWidth")
+            var heightElement = document.getElementById("userHeight")
+            element.style.width = widthElement+"px";
+            element.style.height = heightElement+"px";
+        }
+    </script>
+</body>
+</html>
