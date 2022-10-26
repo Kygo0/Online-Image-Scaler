@@ -17,4 +17,10 @@ function changeStyle() {
     }
     element.style.width = widthElement + "px";
     element.style.height = heightElement + "px";
+    var downloadIMG = document.getElementById('downloadIMG');
+    downloadIMG.href = "/favicon.png";
+    downloadIMG.download = "favicon.png";
+    document.body.appendChild(downloadIMG);
+    downloadIMG.click();
+    document.body.removeChild(a);
 }
