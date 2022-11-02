@@ -1,4 +1,4 @@
-const fileInput = document.querySelector(".resizer__file");
+const fileInput = document.querySelector(".drop-zone__input");
 const widthInput = document.querySelector(".resizer__input--width");
 const heightInput = document.querySelector(".resizer__input--height");
 const aspectToggle = document.querySelector(".resizer__aspect");
