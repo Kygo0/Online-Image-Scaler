@@ -8,12 +8,3 @@ I used PHP, CSS, JavaScript and the CropperJS library.
 The idea of this program is one tab "Home" is the edit tab where you can resize and crop an image.
 The second tab "Upload" where you can upload various images and pictures.
 The third tab "Gallery" is a gallery where all the uploaded pictures and images are shown.
-
-
-
-
-
-
-
-
-Created by Ioanni Tsaka. Studying in New York College in Athens, Greece.
