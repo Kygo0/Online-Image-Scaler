@@ -1,0 +1,37 @@
+﻿body
+{
+    background: lightcoral;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    object-fit: contain;
+}
+
+
+.img-container {
+    width: 30%;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-container img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+h1{
+
+    text-align: center;
+    
+    }
