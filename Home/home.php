@@ -86,55 +86,22 @@ if (isset($_FILES['image'])) {
         </nav>
     </header>
     <h1>
-        <!-- <div class="resizer">
-             <div class="drop-zone">
-                 <span class="drop-zone__prompt">Drop file here or click to upload</span>
-                 <input type="file" name="myFile" class="drop-zone__input resizer__file">
-             </div>
-             <div class="dimensions">
-                 <input type="text" class="resizer__input resizer__input--width" value="0">
-                 x
-                 <input type="text" class="resizer__input resizer__input--height" value="0">
-                 <label>
-                     <input type="checkbox" class="resizer__aspect" checked>
-                     Keep Aspect Ratio
-                 </label>
-             </div>
-             <canvas class="resizer__canvas" width="500" height="500"></canvas>
-         </div>-->
     </h1>
     <main class="page">
         <h2>Upload ,Crop and save.</h2><br>
-        <!-- input file -->
-        <!-- <div class="box">
-        <input type="file" id="file-input">
-    </div>-->
         <div class="resizer">
             <div class="drop-zone box">
-                <span class="drop-zone__prompt">Drop file here or click to upload</span>
+                <span class="drop-zone__prompt">Click here to upload</span>
                 <input type="file" name="myFile" id="file-input" class="drop-zone__input resizer__file resizer__input resizer__input--width resizer__input--height">
             </div>
             <canvas class="resizer__canvas" width="500" height="500" hidden></canvas>
-            <!--<div class="dimensions">
-            <input type="text" class="resizer__input resizer__input--width" value="0">
-            x
-            <input type="text" class="resizer__input resizer__input--height" value="0">
-            <label>
-                <input type="checkbox" class="resizer__aspect" checked>
-                Keep Aspect Ratio
-            </label>
-        </div>-->
         </div>
-        <!-- leftbox -->
         <div class="box-2">
             <div class="result"></div>
         </div>
-        <!--rightbox-->
         <div class="box-2 img-result hide">
-            <!-- result of crop -->
             <img class="cropped" src="" alt="">
         </div>
-        <!-- input file -->
 
         <div class="box">
             <div class="options hide">
@@ -142,14 +109,7 @@ if (isset($_FILES['image'])) {
                 <input type="number" class="img-w" value="300" min="100" max="1200" />
             </div>
         </div>
-        <!-- save btn --> 
         <button class="btn save hide">Save</button>
-        <!-- 
-        <form action="upload.php" method="post" enctype="multipart/form-data">
-        <input type="file" name="image">
-        <input type="submit" value="Upload">
-        </form>
-            -->
        
         
         <a href="" class="btn download hide">Download</a>
